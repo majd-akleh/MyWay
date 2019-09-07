@@ -1,0 +1,398 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_back"
+    tools:context="com.example.user.myproject.Profile_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/textView_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title"
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:text="@string/wjhty"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="settings2"
+                android:src="@drawable/setting" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/personalImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_margin="5dp"
+                android:src="@drawable/me" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/add_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/add_button"
+                        android:clickable="false"
+                        android:onClick="Follow"
+                        android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/username_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:text="Majd Akleh"
+                    android:textColor="@color/blue"
+                    android:paddingRight="10dp"
+                    android:textSize="19dp" />
+
+
+                    </LinearLayout>
+
+
+
+              <ScrollView
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1">
+
+                  <TextView
+                      android:id="@+id/description"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="left"
+                      android:text="Looking forward to meeting new people from all around the world, exchanging culture and experience."
+                      android:paddingRight="10dp"
+                      android:textSize="12dp" />
+
+                  </ScrollView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <!--
+        <TextView
+           android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.01"
+            android:clickable="true"
+            android:gravity="start"
+            android:onClick="EditImage"
+            android:paddingRight="33dp"
+            android:text="@string/edit"
+            android:textSize="14sp" />
+        -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/silver" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shares2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/followings"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="224" />
+
+            <TextView
+                android:id="@+id/followers"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:text="1200" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/shares" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:text="@string/followings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:text="@string/followers" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="0.05"
+            android:background="@color/silver"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/img_pic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="0.3"
+                android:background="@color/light_silver"
+                android:gravity="center_horizontal"
+                android:onClick="ShowPictures">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/pic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/img_alb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="0.3"
+                android:background="@color/light_silver"
+                android:gravity="center_horizontal"
+                android:onClick="ShowAlbums">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/alb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/img_wish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="0.3"
+                android:background="@color/light_silver"
+                android:gravity="center_horizontal"
+                android:onClick="ShowWishList">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/wish" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+               <LinearLayout
+                   android:id="@+id/pictures_"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_margin="80dp"
+                       android:textSize="17dp"
+                       android:gravity="center"
+                       android:textStyle="bold"
+                       android:text="There are no shares yet." />
+
+                   </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_style4"
+                android:gravity="center"
+                android:onClick="GoHome">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/home" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_style4"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:onClick="GoPost">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/add" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notifications1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_style4"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:onClick="GoNotifications">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/noti" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profile1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_style1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+
+                    android:src="@drawable/profile" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name"> MyWay </string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome"> Welcome To MyWay ! </string>
+    <string name="email"> Email </string>
+    <string name="password"> Password </string>
+    <string name="sign_in"> Sign In </string>
+    <string name="create_new"> don\'t have an account? </string>
+    <string name="sign_up"> Register </string>
+    <string name="sign_up2"> Register </string>
+    <string name="forget"> forget password ? </string>
+    <string name="user_name">Username</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="confirm_password">Confirm Password </string>
+    <string name="shares"><![CDATA[Shared]]></string>
+    <string name="followings"><![CDATA[Followings]]></string>
+    <string name="followers"><![CDATA[Followers]]></string>
+    <string name="wjhty"> MyWay </string>
+    <string name="edit">Edit</string>
+    <string name="name">Name:</string>
+    <string name="u_name">Username:</string>
+    <string name="change">Change</string>
+    <string name="definition">Overview:</string>
+    <string name="title_activity_create_account_activity"> Create New Account </string>
+    <string name="title_activity_profile_">Profile</string>
+    <string name="title_activity_edit__profile_">Edit Profile </string>
+    <string name="secret"> Secret Info: </string>
+    <string name="gender">Gender:</string>
+    <string name="email2"> Email:</string>
+    <string name="change_pass">Change Password:</string>
+    <string name="privacy">Privacy:</string>
+    <string name="edit_profile"> Edit Profile </string>
+    <string name="title_activity_search_">Search_Activity</string>
+    <string name="people">People</string>
+    <string name="title_activity_time_line_">TimeLine_Activity</string>
+    <string name="title_activity_notification_activity">Notification_activity</string>
+    <string name="title_activity_post_">Post_Activity</string>
+    <string name="add_desc"> Add Description </string>
+    <string name="price">Price</string>
+    <string name="rating">Rating</string>
+    <string name="season">Season</string>
+    <string name="location">Location</string>
+    <string name="add_to_album">Add to Album</string>
+    <string name="post_info">Posting Info</string>
+    <string name="create_album"> Create New Album </string>
+    <string name="add_pic"> Add Photo </string>
+    <string name="title_activity_change_password"> ChangePasswordActivity </string>
+    <string name="newPassword"> New Password </string>
+    <string name="confirm_newpassword"> Confirm Password </string>
+    <string name="current_password"> Current Password </string>
+    <string name="logout"> Log out </string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="noNoti"> No Notifications </string>
+    <string name="title_activity_forget_password">ForgetPassword</string>
+    <string name="restore"> Restore </string>
+    <string name="add_comment">Add Comment</string>
+    <string name="send">Send</string>
+
+
+</resources>
